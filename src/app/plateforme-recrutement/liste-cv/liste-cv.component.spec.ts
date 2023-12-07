@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ListCvComponent } from './list-cv.component';
+import { ListeCvComponent } from './liste-cv.component';
 
-describe('ListCvComponent', () => {
-  let component: ListCvComponent;
-  let fixture: ComponentFixture<ListCvComponent>;
+describe('ListeCvComponent', () => {
+  let component: ListeCvComponent;
+  let fixture: ComponentFixture<ListeCvComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ListCvComponent]
+      declarations: [ListeCvComponent]
     });
-    fixture = TestBed.createComponent(ListCvComponent);
+    fixture = TestBed.createComponent(ListeCvComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
