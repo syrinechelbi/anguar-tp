@@ -1,0 +1,17 @@
+nav {
+    background-color: #333; /* Couleur de fond de la barre de navigation */
+    padding: 10px; /* Ajoute un peu d'espace autour des liens */
+  }
+  
+  a {
+    color: #fff; /* Couleur du texte des liens */
+    text-decoration: none; /* Supprime le soulignement par défaut des liens */
+    margin-right: 15px; /* Ajoute un espace entre les liens */
+    font-size: 16px; /* Taille de la police */
+    font-weight: bold; /* Gras */
+    transition: color 0.3s; /* Ajoute une transition pour une animation en douceur de la couleur du texte */
+  }
+  
+  a:hover {
+    color: #ffd700; /* Couleur du texte lorsque survolé */
+  }

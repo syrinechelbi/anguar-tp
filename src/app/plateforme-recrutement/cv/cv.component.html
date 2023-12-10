@@ -1,8 +1,27 @@
-<div class="row">
-    <div class="col-md-6 col-sm-3">
-      <app-liste-cv></app-liste-cv>
-    </div>
-    <div class="col-md-6 col-sm-9">
-      <app-detail-cv></app-detail-cv>
-    </div>
+<header class="jumbotron" style="display: flex; height: 8%;">
+  <div class="row row-header" style="display: flex; justify-content: center;">
+    <h3><i class="fa fa-file"></i>Plateforme de recrutement </h3>
   </div>
+</header>
+<br/>
+
+<div class="row">
+
+  <div class="col-md-6 col-sm-3" style ="cursor: pointer;">
+    <app-liste-cv (selectedCv)="selectCv($event)" [cvs]="cvs"></app-liste-cv>
+  </div>
+
+  <div *ngIf="isSelected" class="col-md-6 col-sm-9">
+    <app-detail-cv 
+     [cv]="selectedCv" ></app-detail-cv>
+  </div>
+
+</div>
+<div class="row" style="display: flex; justify-content: center;">
+  <h3> La liste des CVs séléctionnés pour embauche </h3>
+  </div>
+<div class="row">
+
+    <app-liste-embauche></app-liste-embauche>
+
+</div>

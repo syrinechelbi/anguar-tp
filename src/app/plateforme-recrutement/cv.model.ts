@@ -7,7 +7,7 @@ export class Cv{
     cin: string;
     job: string;
   
-    constructor(id=0, name='', firstname='', age=0, path='', cin='', job='') {
+    constructor(id:number, name:string, firstname:string, age:number, path:string, cin:string, job:string) {
       this.id = id;
       this.name = name;
       this.firstname = firstname;

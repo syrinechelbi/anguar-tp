@@ -20,6 +20,14 @@ import { CvComponent } from './plateforme-recrutement/cv/cv.component';
 import { ListeCvComponent } from './plateforme-recrutement/liste-cv/liste-cv.component';
 import { DetailCvComponent } from './plateforme-recrutement/detail-cv/detail-cv.component';
 import { ItemCvComponent } from './plateforme-recrutement/item-cv/item-cv.component';
+import { ListeEmbaucheComponent } from './plateforme-recrutement/liste-embauche/liste-embauche.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { NavbarComponent } from './navbar/navbar.component';
+import { AuthenticationFormComponent } from './authentication-form/authentication-form.component';
+import { ImageStreamComponent } from './image-stream/image-stream.component';
+import { DetailsComponent } from './details/details.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +38,11 @@ import { ItemCvComponent } from './plateforme-recrutement/item-cv/item-cv.compon
     MiniWordComponent,
     RainbowDirective,
     SimulateurComponent,
+    NavbarComponent,
+    AuthenticationFormComponent,
+    ImageStreamComponent,
+    DetailsComponent,
+    
     
     
    
@@ -42,10 +55,16 @@ import { ItemCvComponent } from './plateforme-recrutement/item-cv/item-cv.compon
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    CommonModule,
     ReactiveFormsModule,
     NgbModule,ParentComponent,FilsComponent,CommonModule,ListeCvComponent,
     DetailCvComponent,
-    ItemCvComponent,CvComponent
+    ItemCvComponent,CvComponent,ListeEmbaucheComponent,HttpClientModule,
+    ToastrModule.forRoot({
+      positionClass: 'toast-top-right', // Position des toasts
+      timeOut: 3000, // Durée d'affichage en millisecondes
+      closeButton: true, // Afficher le bouton de fermeture
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

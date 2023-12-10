@@ -8,7 +8,7 @@ export class PipeImagePipe implements PipeTransform {
    
   
     if (!value || value.trim() === '') {
-      return 'default-image.jpg';
+      return 'assets/images/rotating_card_profile.png';
     }
     return value;
   }

@@ -1,0 +1,11 @@
+<div *ngIf="cvDetails" class="container">
+    <h2>{{ cvDetails.firstname }} {{ cvDetails.name }}</h2>
+    <div class="row">
+        <div class="col">
+            <p><strong>ID:</strong> {{ cvDetails.id }}</p>
+            <p><strong>Âge:</strong> {{ cvDetails.age }}</p>
+            <p><strong>Profession:</strong> {{ cvDetails.job }}</p>
+            <!-- Ajoutez d'autres détails du CV en fonction de votre modèle -->
+        </div>
+    </div>
+</div>

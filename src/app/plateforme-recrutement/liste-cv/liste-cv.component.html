@@ -1,7 +1,5 @@
 <ol class="list-group">
-   <a href="javascript:void(0)"><app-item-cv ></app-item-cv></a>
-   <a href="javascript:void(0)"><app-item-cv ></app-item-cv></a>
-   <a href="javascript:void(0)"><app-item-cv ></app-item-cv></a>
-   <a href="javascript:void(0)"><app-item-cv ></app-item-cv></a>
-
-  </ol>
+   <app-item-cv *ngFor="let cv of cvs"
+    [cv]="cv" (selectedCv)="showDetail($event)">
+   </app-item-cv>
+ </ol>

@@ -1,0 +1,8 @@
+
+<div *ngIf="cvs" >
+    <span *ngFor="let cv of cvs">
+      <img src="assets/images/{{cv.path}}" width="150px" height="150px" class="rounded-circle" alt="{{cv.firstname}}">
+      {{cv.firstname}}
+      {{cv.name}}
+    </span>
+  </div>
